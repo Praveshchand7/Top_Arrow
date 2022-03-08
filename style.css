@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+
+li {
+  display: flex;
+  margin-right: 50px;
+  list-style: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: violet;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+#first,
+#second,
+#third,
+#forth {
+  height: 50vh;
+}
+#first {
+  background-color: chartreuse;
+}
+
+#second {
+  background-color: chartreuse;
+}
+
+#third {
+  background-color: chartreuse;
+}
+
+#forth {
+  background-color: chartreuse;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: green;
+  background-color: white;
+  height: 50px;
+  width: 100px;
+}
+
+.bg {
+  background-color: white;
+}
+.bg a,
+.bg span {
+  color: #333;
+}
+
+header {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.fixed-header {
+  background-color: rgb(187, 11, 49);
+}
+
+button {
+  background-color: chocolate;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-family: inherit;
+  cursor: pointer;
+  color: white;
+}
+
+.material-icons {
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  #mobileButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav.responsive ul {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    display: block;
+  }
+
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive a {
+    color: #333;
+    display: block;
+  }
+}
